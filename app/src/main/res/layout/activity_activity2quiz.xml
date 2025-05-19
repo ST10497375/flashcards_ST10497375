@@ -29,21 +29,23 @@
         android:text="TRUE"
         app:layout_constraintBottom_toTopOf="@+id/btnFalseButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txeQuestionTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/txeQuestionTextView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnFalseButton"
         android:layout_width="187dp"
         android:layout_height="68dp"
-        android:layout_marginStart="116dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="365dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginEnd="160dp"
         android:layout_marginBottom="44dp"
         android:text="FALSE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txeQuestionTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/txeQuestionTextView"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

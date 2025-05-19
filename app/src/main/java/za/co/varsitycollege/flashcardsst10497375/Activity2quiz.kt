@@ -33,17 +33,9 @@ class Activity2quiz : AppCompatActivity() {
         val btnTrueButton = findViewById<Button>(R.id.btnTrueButton)
         val btnFalseButton = findViewById<Button>(R.id.btnFalseButton)
 
-        val questions = listOf(
-            "Mandela was the first democratically elected president of South Africa" to true,
-            "WW1 began in September 1918" to false,
-            "Abraham Lincoln was the first president of the US" to false,
-            "John F Kennedy was assassinated in October 1963" to false,
-            "Hitler was the leader of the Nazis" to true
-        ).shuffled()
 
 
-        var currentIndex = 0
-        var score = 0
+
 
         txeQuestionTextView.text = questions[currentIndex].first
 
@@ -78,12 +70,12 @@ class Activity2quiz : AppCompatActivity() {
             if(questions[currentIndex].second == false) {
                 score++
                 Toast.makeText(
-                    this, "incorrect!",
+                    this, "correct!",
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
                 Toast.makeText(
-                    this, "correct!",
+                    this, "incorrect!",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -94,6 +86,7 @@ class Activity2quiz : AppCompatActivity() {
             } else {
                 val intent = Intent(this, scoreActivity::class.java)
                 intent.putExtra("score", score)
+                startActivity(intent)
                 finish()
             }
         }
