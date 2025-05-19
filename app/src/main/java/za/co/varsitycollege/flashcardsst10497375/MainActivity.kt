@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Activity2quiz::class.java)
             startActivity(intent)
         }
-
+//made sure button is alligned to second activity
 
     }
 }

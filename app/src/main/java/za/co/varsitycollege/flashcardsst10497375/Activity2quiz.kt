@@ -20,6 +20,7 @@ class Activity2quiz : AppCompatActivity() {
     )
     private var currentIndex = 0
     private var score = 0
+    //helps to organize
 
 
 
@@ -38,7 +39,7 @@ class Activity2quiz : AppCompatActivity() {
 
 
         txeQuestionTextView.text = questions[currentIndex].first
-
+//currentIndex is basically the current scores as you answer each question
 
         btnTrueButton.setOnClickListener {
             if(questions[currentIndex].second == true) {
@@ -63,7 +64,7 @@ class Activity2quiz : AppCompatActivity() {
                 intent.putExtra("score", score)
                 startActivity(intent)
                 finish()
-            }
+            }//pushes onto the third score activity
         }
 
         btnFalseButton.setOnClickListener {
@@ -78,7 +79,7 @@ class Activity2quiz : AppCompatActivity() {
                     this, "incorrect!",
                     Toast.LENGTH_SHORT
                 ).show()
-            }
+            }//toast displays whether the answer is correct or not
 
             currentIndex++
             if(currentIndex < questions.size) {

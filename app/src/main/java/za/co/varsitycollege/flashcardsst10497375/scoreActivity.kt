@@ -18,13 +18,13 @@ class scoreActivity : AppCompatActivity() {
         val score = intent.getIntExtra("score", 0)
         val txeScoreTextView = findViewById<TextView>(R.id.txeScoreTextView)
         txeScoreTextView.text = "your score: $score / 5"
-
+//displays your score from the answers
         val btnRedoButton = findViewById<Button>(R.id.btnRedoButton)
         btnRedoButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
             finish()
-        }
+        }//restarts the app, basically sending you back to the beginning with a click of a button
     }
 }
