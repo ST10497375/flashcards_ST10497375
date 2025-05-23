@@ -4,4 +4,4 @@ screenshots:
 ![screeen2](https://github.com/user-attachments/assets/f09a98c5-edd8-42ed-9581-1a4d1312e83d)
 ![screeen3](https://github.com/user-attachments/assets/2e91f484-be30-4937-825e-3140f3251717)
 github link: https://github.com/ST10497375/flashcards_ST10497375
-youtube link: https://youtu.be/0uVLhB4wUGs 
+youtube link: https://youtu.be/Jd-Ju1MhI7Q
